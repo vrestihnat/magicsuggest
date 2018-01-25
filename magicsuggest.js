@@ -574,7 +574,7 @@
          */
         this.setName = function(name){
             cfg.name = name;
-            if(name){
+            if(name && cfg.maxSelection > 1){
                 cfg.name += name.indexOf('[]') > 0 ? '' : '[]';
             }
             if(ms._valueContainer){
